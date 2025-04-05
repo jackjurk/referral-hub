@@ -23,12 +23,12 @@ export default function Dashboard() {
       image: '💰',
       description: 'Cryptocurrency exchange bonuses and rewards',
       content: [
-        { name: 'Coinbase', code: 'CB100', description: '$100 in free Bitcoin with $1000 deposit' },
-        { name: 'Binance.US', code: 'BNB50', description: '$50 in BNB token signup bonus' },
-        { name: 'Crypto.com', code: 'CRO25', description: '$25 in CRO + metal card perks' },
-        { name: 'Gemini', code: 'GEM20', description: '$20 Bitcoin welcome bonus' },
-        { name: 'BlockFi', code: 'BF250', description: '$250 in crypto with $100 deposit' },
-        { name: 'Kraken', code: 'KRKN75', description: '$75 trading fee credit' }
+        { name: 'Coinbase', code: 'NEWBTC', description: '$5 in BTC + up to $200 trading bonus' },
+        { name: 'Binance.US', code: 'BNBFREE', description: 'Zero trading fees + $10 in BNB' },
+        { name: 'Crypto.com', code: 'CDC2024', description: '$25 bonus + 2% extra card cashback' },
+        { name: 'Gemini', code: 'GEMSTART', description: '$10 BTC + 10 free trades' },
+        { name: 'BlockFi', code: 'BLOCKSTART', description: '$50 BTC with $100 deposit' },
+        { name: 'Kraken', code: 'KRKSTART', description: '0.1% trading fees for 30 days' }
       ]
     },
     { 
@@ -37,15 +37,15 @@ export default function Dashboard() {
       price: '$10', 
       description: 'Unlock exclusive food delivery promotions and referral codes',
       content: [
-        { name: 'DoorDash', code: 'WELCOME15', description: '$15 off first order' },
-        { name: 'UberEats', code: 'EATS20', description: '20% off next 3 orders' },
-        { name: 'GrubHub', code: 'GRUB10', description: '$10 off orders over $30' },
-        { name: 'Postmates', code: 'POST25', description: '$25 off first 2 orders' },
-        { name: 'Caviar', code: 'CAV20', description: '20% off luxury restaurants' },
-        { name: 'Seamless', code: 'SEAM12', description: '$12 off first order' },
-        { name: 'ChowNow', code: 'CHOW10', description: '10% off local restaurants' },
-        { name: 'Delivery.com', code: 'DEL15', description: '$15 off first 3 orders' },
-        { name: 'EatStreet', code: 'EAT25', description: '25% off first month' }
+        { name: 'DoorDash', code: 'DASH2024', description: '$30 off first 2 orders + free delivery' },
+        { name: 'UberEats', code: 'EATS75', description: '75% off first order up to $25' },
+        { name: 'GrubHub', code: 'GRUB40', description: '40% off first order up to $20' },
+        { name: 'Postmates', code: 'PMATES', description: 'Free delivery + $15 off first order' },
+        { name: 'Caviar', code: 'CAVNEW', description: '$40 off first 2 luxury orders' },
+        { name: 'Seamless', code: 'SMOOTH', description: '$20 off first 2 orders' },
+        { name: 'ChowNow', code: 'CHOWNOW', description: '25% off first 3 local orders' },
+        { name: 'Delivery.com', code: 'DELFREE', description: 'Free delivery for 2 months' },
+        { name: 'EatStreet', code: 'STREET50', description: '50% off first order up to $30' }
       ]
     },
     { 
@@ -54,12 +54,12 @@ export default function Dashboard() {
       price: '$10', 
       description: 'Access premium sports betting offers and bonuses',
       content: [
-        { name: 'DraftKings', code: 'DK200', description: '$200 sign-up bonus' },
-        { name: 'FanDuel', code: 'FD100', description: '$100 risk-free bet' },
-        { name: 'BetMGM', code: 'MGM50', description: '$50 free bet' },
-        { name: 'Caesars', code: 'CZR1K', description: '$1000 first bet insurance' },
-        { name: 'BetRivers', code: 'BR250', description: '$250 deposit match' },
-        { name: 'WynnBet', code: 'WYNN100', description: '$100 free bet on signup' }
+        { name: 'DraftKings', code: 'DK1000', description: 'Up to $1000 deposit match + $50 free' },
+        { name: 'FanDuel', code: 'FD150', description: '$150 bonus bets, no deposit needed' },
+        { name: 'BetMGM', code: 'MGMWIN', description: 'First bet paid back up to $1500' },
+        { name: 'Caesars', code: 'CZRMAX', description: '$1000 bonus + 1000 tier credits' },
+        { name: 'BetRivers', code: 'RIVERS', description: '2nd chance bet up to $500' },
+        { name: 'WynnBet', code: 'WYNNVIP', description: 'Bet $100, get $100 free bet' }
       ]
     },
     { 
@@ -111,15 +111,15 @@ export default function Dashboard() {
       image: '📺',
       description: 'Streaming service trials and discounts',
       content: [
-        { name: 'Netflix', code: 'NFLX3', description: '3 months at 50% off' },
-        { name: 'Hulu', code: 'HULU99', description: '$0.99/month for 6 months' },
-        { name: 'Disney+', code: 'DISNEY20', description: '20% off annual plan' },
-        { name: 'HBO Max', code: 'HBO40', description: '40% off annual subscription' },
-        { name: 'Paramount+', code: 'PARA50', description: '50% off first year' },
-        { name: 'Apple TV+', code: 'APPLE3', description: '3 months free trial' },
-        { name: 'YouTube TV', code: 'YTTV30', description: '$30 off first 3 months' },
-        { name: 'Peacock', code: 'PCOCK5', description: '$5/month premium plan' },
-        { name: 'Discovery+', code: 'DISC1', description: '$1/month for 3 months' }
+        { name: 'Netflix', code: 'NFLXNEW', description: 'First 3 months at $6.99/month' },
+        { name: 'Hulu', code: 'HULU2024', description: '$2/month for 12 months, all plans' },
+        { name: 'Disney+', code: 'DISNEYYR', description: '12 months for price of 10' },
+        { name: 'HBO Max', code: 'HBOSTART', description: '7-day free trial + 20% off year' },
+        { name: 'Paramount+', code: 'PARAMNT', description: '30-day free trial + $30 off annual' },
+        { name: 'Apple TV+', code: 'APPLETV', description: '6 months free with new device' },
+        { name: 'YouTube TV', code: 'YTNEW', description: '$54.99/month for 3 months' },
+        { name: 'Peacock', code: 'PEACOCK', description: 'Premium for $2.99/month, 1 year' },
+        { name: 'Discovery+', code: 'DISCOVER', description: 'Ad-free plan $4.99/month, 1 year' }
       ]
     },
     { 
@@ -129,15 +129,15 @@ export default function Dashboard() {
       image: '✈️',
       description: 'Hotel and airline booking discounts',
       content: [
-        { name: 'Expedia', code: 'EXP100', description: '$100 off $500+ packages' },
-        { name: 'Hotels.com', code: 'HOTEL75', description: '$75 off 3+ night stays' },
-        { name: 'Booking.com', code: 'BOOK50', description: '50% off selected hotels' },
-        { name: 'Airbnb', code: 'AIR100', description: '$100 off first booking' },
-        { name: 'Southwest', code: 'SWA200', description: '$200 off vacation packages' },
-        { name: 'Delta', code: 'DELTA150', description: '$150 off international flights' },
-        { name: 'United', code: 'UNITED100', description: '$100 off domestic flights' },
-        { name: 'Priceline', code: 'PRICE20', description: '20% off express deals' },
-        { name: 'KAYAK', code: 'KAYAK25', description: '25% off hotel bookings' }
+        { name: 'Expedia', code: 'EXPACK', description: '$200 off $1000+ packages + free insurance' },
+        { name: 'Hotels.com', code: 'BONUS', description: 'Every 5th night free + $50 credit' },
+        { name: 'Booking.com', code: 'GENIUS', description: 'Instant Genius status + 15% off' },
+        { name: 'Airbnb', code: 'ABNB50', description: '50% off first stay up to $200' },
+        { name: 'Southwest', code: 'RAPID', description: '5000 bonus points + companion pass' },
+        { name: 'Delta', code: 'SKYMILES', description: '5000 bonus miles + priority boarding' },
+        { name: 'United', code: 'UNITED24', description: 'Double miles first 3 months' },
+        { name: 'Priceline', code: 'VIP2024', description: 'Name your price + 5% extra off' },
+        { name: 'KAYAK', code: 'KAYAKPRO', description: 'Price alerts + $50 hotel credit' }
       ]
     }
   ];

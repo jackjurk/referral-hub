@@ -8,7 +8,11 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { amount, currency = 'usd' } = req.body;
+    const { amount, currency = 'usd', metadata = {} } = req.body;
+
+    if (!amount || amount <= 0) {
+      return res.status(400).json({ error: 'Invalid amount' });
+    }
 
     // Create a PaymentIntent with the order amount and currency
     const paymentIntent = await stripe.paymentIntents.create({
@@ -18,15 +22,25 @@ export default async function handler(req, res) {
         enabled: true,
       },
       metadata: {
-        integration_check: 'accept_a_payment',
+        categoryId: metadata.categoryId,
+        userId: metadata.userId,
+        categoryName: metadata.categoryName,
+        timestamp: new Date().toISOString(),
+        environment: process.env.NODE_ENV
       },
+      description: `Unlock ${metadata.categoryName} category for user ${metadata.userId}`
     });
 
     res.status(200).json({
       clientSecret: paymentIntent.client_secret,
+      id: paymentIntent.id
     });
   } catch (error) {
     console.error('Error creating payment intent:', error);
-    res.status(500).json({ error: error.message });
+    res.status(error.statusCode || 500).json({
+      error: error.message,
+      type: error.type,
+      code: error.code
+    });
   }
 }

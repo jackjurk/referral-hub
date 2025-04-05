@@ -17,6 +17,21 @@ export default function Dashboard() {
 
   const categories = [
     { 
+      id: 'crypto',
+      name: 'Crypto',
+      price: '$10',
+      image: '💰',
+      description: 'Cryptocurrency exchange bonuses and rewards',
+      content: [
+        { name: 'Coinbase', code: 'CB100', description: '$100 in free Bitcoin with $1000 deposit' },
+        { name: 'Binance.US', code: 'BNB50', description: '$50 in BNB token signup bonus' },
+        { name: 'Crypto.com', code: 'CRO25', description: '$25 in CRO + metal card perks' },
+        { name: 'Gemini', code: 'GEM20', description: '$20 Bitcoin welcome bonus' },
+        { name: 'BlockFi', code: 'BF250', description: '$250 in crypto with $100 deposit' },
+        { name: 'Kraken', code: 'KRKN75', description: '$75 trading fee credit' }
+      ]
+    },
+    { 
       id: 'food', 
       name: 'Food Delivery', 
       price: '$10', 
@@ -27,7 +42,10 @@ export default function Dashboard() {
         { name: 'GrubHub', code: 'GRUB10', description: '$10 off orders over $30' },
         { name: 'Postmates', code: 'POST25', description: '$25 off first 2 orders' },
         { name: 'Caviar', code: 'CAV20', description: '20% off luxury restaurants' },
-        { name: 'Seamless', code: 'SEAM12', description: '$12 off first order' }
+        { name: 'Seamless', code: 'SEAM12', description: '$12 off first order' },
+        { name: 'ChowNow', code: 'CHOW10', description: '10% off local restaurants' },
+        { name: 'Delivery.com', code: 'DEL15', description: '$15 off first 3 orders' },
+        { name: 'EatStreet', code: 'EAT25', description: '25% off first month' }
       ]
     },
     { 
@@ -84,6 +102,42 @@ export default function Dashboard() {
         { name: 'Unibet', code: 'UNI250', description: '$250 risk-free first bet' },
         { name: 'FOX Bet', code: 'FOX100', description: '$100 free bet no deposit' },
         { name: 'SugarHouse', code: 'SUGAR500', description: '$500 first deposit bonus' }
+      ]
+    },
+    { 
+      id: 'streaming',
+      name: 'Streaming',
+      price: '$10',
+      image: '📺',
+      description: 'Streaming service trials and discounts',
+      content: [
+        { name: 'Netflix', code: 'NFLX3', description: '3 months at 50% off' },
+        { name: 'Hulu', code: 'HULU99', description: '$0.99/month for 6 months' },
+        { name: 'Disney+', code: 'DISNEY20', description: '20% off annual plan' },
+        { name: 'HBO Max', code: 'HBO40', description: '40% off annual subscription' },
+        { name: 'Paramount+', code: 'PARA50', description: '50% off first year' },
+        { name: 'Apple TV+', code: 'APPLE3', description: '3 months free trial' },
+        { name: 'YouTube TV', code: 'YTTV30', description: '$30 off first 3 months' },
+        { name: 'Peacock', code: 'PCOCK5', description: '$5/month premium plan' },
+        { name: 'Discovery+', code: 'DISC1', description: '$1/month for 3 months' }
+      ]
+    },
+    { 
+      id: 'travel',
+      name: 'Travel',
+      price: '$10',
+      image: '✈️',
+      description: 'Hotel and airline booking discounts',
+      content: [
+        { name: 'Expedia', code: 'EXP100', description: '$100 off $500+ packages' },
+        { name: 'Hotels.com', code: 'HOTEL75', description: '$75 off 3+ night stays' },
+        { name: 'Booking.com', code: 'BOOK50', description: '50% off selected hotels' },
+        { name: 'Airbnb', code: 'AIR100', description: '$100 off first booking' },
+        { name: 'Southwest', code: 'SWA200', description: '$200 off vacation packages' },
+        { name: 'Delta', code: 'DELTA150', description: '$150 off international flights' },
+        { name: 'United', code: 'UNITED100', description: '$100 off domestic flights' },
+        { name: 'Priceline', code: 'PRICE20', description: '20% off express deals' },
+        { name: 'KAYAK', code: 'KAYAK25', description: '25% off hotel bookings' }
       ]
     }
   ];

@@ -61,12 +61,17 @@ export default function PaymentModal({ isOpen, onClose, category, onSuccess }) {
   useEffect(() => {
     if (isOpen && category) {
       // Create a payment intent when the modal opens
-      fetch('http://localhost:3001/create-payment-intent', {
+      fetch('/api/create-payment-intent', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           amount: parseFloat(category.price.replace('$', '')),
-          currency: 'usd'
+          currency: 'usd',
+          metadata: {
+            categoryId: category.id,
+            userId: auth.currentUser?.uid,
+            categoryName: category.name
+          }
         })
       })
         .then(res => res.json())

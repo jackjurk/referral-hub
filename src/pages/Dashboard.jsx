@@ -25,6 +25,9 @@ export default function Dashboard() {
         { name: 'DoorDash', code: 'WELCOME15', description: '$15 off first order' },
         { name: 'UberEats', code: 'EATS20', description: '20% off next 3 orders' },
         { name: 'GrubHub', code: 'GRUB10', description: '$10 off orders over $30' },
+        { name: 'Postmates', code: 'POST25', description: '$25 off first 2 orders' },
+        { name: 'Caviar', code: 'CAV20', description: '20% off luxury restaurants' },
+        { name: 'Seamless', code: 'SEAM12', description: '$12 off first order' }
       ]
     },
     { 
@@ -36,6 +39,9 @@ export default function Dashboard() {
         { name: 'DraftKings', code: 'DK200', description: '$200 sign-up bonus' },
         { name: 'FanDuel', code: 'FD100', description: '$100 risk-free bet' },
         { name: 'BetMGM', code: 'MGM50', description: '$50 free bet' },
+        { name: 'Caesars', code: 'CZR1K', description: '$1000 first bet insurance' },
+        { name: 'BetRivers', code: 'BR250', description: '$250 deposit match' },
+        { name: 'WynnBet', code: 'WYNN100', description: '$100 free bet on signup' }
       ]
     },
     { 
@@ -47,6 +53,9 @@ export default function Dashboard() {
         { name: 'Amazon', code: 'SAVE30', description: '30% off first purchase' },
         { name: 'Target', code: 'NEW25', description: '$25 off $100+' },
         { name: 'Walmart', code: 'WELCOME20', description: '20% off online orders' },
+        { name: 'Best Buy', code: 'BB50OFF', description: '$50 off $200+ electronics' },
+        { name: 'Nike', code: 'NIKE25', description: '25% off full-price styles' },
+        { name: 'Adidas', code: 'ADI30', description: '30% off sitewide' }
       ]
     },
     { 
@@ -58,6 +67,9 @@ export default function Dashboard() {
         { name: 'Uber', code: 'RIDE25', description: '25% off next 5 rides' },
         { name: 'Lyft', code: 'SAVE20', description: '$20 off first ride' },
         { name: 'Via', code: 'VIA15', description: '15% off all rides' },
+        { name: 'Juno', code: 'JUNO30', description: '30% off first 3 rides' },
+        { name: 'Gett', code: 'GETT10', description: '$10 off peak rides' },
+        { name: 'Curb', code: 'CURB15', description: '15% off airport rides' }
       ]
     },
     { 
@@ -69,6 +81,9 @@ export default function Dashboard() {
         { name: 'Caesars', code: 'CZR500', description: '$500 welcome bonus' },
         { name: 'PointsBet', code: 'PB200', description: '$200 risk-free bet' },
         { name: 'BetRivers', code: 'BR100', description: '100% deposit match' },
+        { name: 'Unibet', code: 'UNI250', description: '$250 risk-free first bet' },
+        { name: 'FOX Bet', code: 'FOX100', description: '$100 free bet no deposit' },
+        { name: 'SugarHouse', code: 'SUGAR500', description: '$500 first deposit bonus' }
       ]
     }
   ];
